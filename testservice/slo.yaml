@@ -16,3 +16,6 @@ objectives:
             - <=800
       weight: 1
       key_sli: false
+total_score:
+    pass: 85%
+    warning: 80%
