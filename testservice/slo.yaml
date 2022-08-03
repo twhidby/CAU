@@ -6,7 +6,7 @@ comparison:
     number_of_comparison_results: 1
     aggregate_function: avg
 objectives:
-    - sli: response_time_p95
+    - sli: action_duration
       displayName: ""
       pass:
         - criteria:
@@ -16,20 +16,3 @@ objectives:
             - <=800
       weight: 1
       key_sli: false
-    - sli: error_rate
-      displayName: ""
-      pass:
-        - criteria:
-            - <5
-      warning: []
-      weight: 1
-      key_sli: false
-    - sli: throughput
-      displayName: ""
-      pass: []
-      warning: []
-      weight: 0
-      key_sli: false
-total_score:
-    pass: 90%
-    warning: 75%
